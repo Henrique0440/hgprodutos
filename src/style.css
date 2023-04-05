@@ -17,6 +17,12 @@ body {
     src: url("../Font/montserrat/Montserrat-Black.otf");
 }
 
+@font-face {
+    font-family: montserrat media;
+    src: url("../Font/montserrat/Montserrat-Medium.otf");
+}
+
+
 a {
     text-decoration: none;
 }
@@ -85,7 +91,7 @@ section {
 
 .produtos:hover {
     transition: 500ms;
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: inset 1px 1px 10px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
 }
 
@@ -93,14 +99,14 @@ section {
     font-size: 30px;
     text-align: center;
     color: rgb(255, 0, 0);
-    font-family: minha fonte;
+    font-family: montserrat media;
     overflow: hidden;
     white-space: nowrap;
 }
 
 .infosprod {
     margin-top: 30px;
-    background-color: white;  
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -167,4 +173,24 @@ footer {
 .contato p {
     margin-left: 10px;
     text-align: left;
+}
+
+.vermais {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.vermais button {
+    color: white;
+    background-color: blue;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 1px aqua, 0 0 5px rgb(0, 233, 250);
+}
+
+.vermais button:hover {
+    box-shadow: inset 0 0 1px aqua, 0 0 10px rgb(0, 233, 250);
+    transform: scale(1.1);
 }
