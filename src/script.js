@@ -56,7 +56,7 @@ function vermais() {
     <!----------------------------------------------------------------------------------------------------------------->
     <div class="produtos">
         <a href="./AutoLimpe/rose-31.html">
-            <img src="../Image/Produtos/AutoLimpe/ROSE-31.png" alt="">
+            <img src="../Image/Produtos/AutoLimpe/rose-31.png" alt="">
         </a>
         <h1>ROSE 31</h1>
     </div>`
