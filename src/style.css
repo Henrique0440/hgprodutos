@@ -75,7 +75,7 @@ section {
 }
 
 .form {
-    margin-left: 25px;
+    text-align: center;
 }
 
 .produtos {
@@ -90,7 +90,7 @@ section {
 }
 
 .produtos:hover {
-    transition: 500ms;
+    transition: 200ms;
     transform: scale(1.05);
     box-shadow: inset 1px 1px 10px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
 }
