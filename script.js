@@ -10,6 +10,10 @@ function empresa() {
     location.href = './empresa.html'
 }
 
+function whatsapp() {
+    location.href = 'https://wa.me/5561984364585'
+}
+
 document.addEventListener('DOMContentLoaded', function () {
 
     let forma = document.getElementById('form')
@@ -25,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             nome: "ACERO LAVANDA",
             image: "./Image/Produtos/Klimp/acero-lavanda.png",
-            Finalidade: "",
-            Rotulo: "Desinfecção",
+            Finalidade: "Desinfecção",
+            Rotulo: "",
             id: "1"
         },
         {
@@ -61,29 +65,36 @@ document.addEventListener('DOMContentLoaded', function () {
             nome: "AROMAT. JORLIN",
             image: "./Image/Produtos/Klimp/jorlin.png",
             Finalidade: "",
-            Rotulo: "",
+            Rotulo: "Desodorizar",
             id: "6"
         },
         {
-            nome: "",
-            image: "",
+            nome: "NEUTR. DE ODORES",
+            image: "./Image/Produtos/Klimp/neutralizador-de-odores.png",
             Finalidade: "",
-            Rotulo: "",
+            Rotulo: "Desodorizar",
             id: "7"
         },
         {
-            nome: "",
-            image: "",
+            nome: "AROMAT. DANUBIO",
+            image: "./Image/Produtos/Klimp/danubio.png",
             Finalidade: "",
-            Rotulo: "",
+            Rotulo: "Desodorizar",
             id: "8"
         },
         {
-            nome: "",
-            image: "",
+            nome: "KLIMP TALCO",
+            image: "./Image/Produtos/Klimp/klimp-talco.png",
             Finalidade: "",
             Rotulo: "",
             id: "9"
+        },
+        {
+            nome: "KLIMP LAVANDA",
+            image: "./Image/Produtos/Klimp/klimp-lavanda.png",
+            Finalidade: "",
+            Rotulo: "",
+            id: "10"
         }
     ]
 

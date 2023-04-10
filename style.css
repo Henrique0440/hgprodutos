@@ -65,12 +65,12 @@ section {
     content: '';
     position: absolute;
     top: -2%;
-    left: -2%;
+    left: -1.5%;
     height: 103%;
     width: 103%;
     z-index: -1;
     background-image: linear-gradient(var(--rotate), red, green, blue);
-    animation: spin 4s linear infinite;
+    animation: spin 10s linear infinite;
 }
 
 .formProd::after {
@@ -83,8 +83,8 @@ section {
     width: 103%;
     z-index: -1;
     background-image: linear-gradient(var(--rotate), red, green, blue);
-    filter: blur(10px);
-    animation: spin 4s linear infinite;
+    filter: blur(5px);
+    animation: spin 10s linear infinite;
 }
 
 @keyframes spin {
@@ -98,8 +98,10 @@ section {
 }
 
 .formProd-2 {
+    position: relative;
     text-align: center;
     width: 600px;
+    height: 650px;
     display: inline-block;
     margin: 5px;
     border-radius: 10px;
@@ -114,6 +116,33 @@ section {
 .formProd-2 img {
     filter: drop-shadow(0px 0px 3px black);
     width: 300px;
+}
+
+.formProd-2::before {
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    height: 660px;
+    width: 610px;
+    z-index: -1;
+    background-image: linear-gradient(var(--rotate), red, green, blue);
+    animation: spin 4s linear infinite;
+}
+
+.formProd-2::after {
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    height: 660px;
+    width: 610px;
+    z-index: -1;
+    background-image: linear-gradient(var(--rotate), red, green, blue);
+    filter: blur(10px);
+    animation: spin 4s linear infinite;
 }
 
 
@@ -192,6 +221,7 @@ a {
     .formProd-2 {
         text-align: center;
         width: 300px;
+        height: 350px;
         display: inline-block;
         margin: 5px;
         border-radius: 10px;
@@ -202,8 +232,48 @@ a {
         color: rgb(252, 252, 252);
     }
 
+    .formProd-2::before {
+        border-radius: 10px;
+        content: '';
+        position: absolute;
+        top: -1%;
+        left: -1%;
+        height: 355px;
+        width: 305px;
+        z-index: -1;
+        background-image: linear-gradient(var(--rotate), red, green, blue);
+        animation: spin 4s linear infinite;
+    }
+
+    .formProd-2::after {
+        border-radius: 10px;
+        content: '';
+        position: absolute;
+        top: -1%;
+        left: -1%;
+        height: 355px;
+        width: 305px;
+        z-index: -1;
+        background-image: linear-gradient(var(--rotate), red, green, blue);
+        filter: blur(10px);
+        animation: spin 4s linear infinite;
+    }
+
+
     .formProd-2 img {
         width: 120px;
+    }
+
+    .formProd-2 h1 {
+        font-size: 20px;
+    }
+
+    .formProd-2 h2 {
+        font-size: 15px;
+    }
+
+    .formProd-2 h4 {
+        font-size: 12px;
     }
 
     .infosemp {
