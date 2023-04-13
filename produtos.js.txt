@@ -1,17 +1,27 @@
-let res = document.getElementById('produtos')
+        <div id="produtos_autolimpe" class="produtos">
+            <h1>PRODUTOS AUTOLIMPE</h1>
+        </div>
+        <div id="produtos_start" class="produtos">
+            <h1>PRODUTOS START</h1>
+        </div>
+        <div id="produtos_klimp" class="produtos">
+            <h1>PRODUTOS KLIMP</h1>
+        </div>
+
+
+
+
+let res_autolimpe = document.getElementById('produtos_autolimpe')
+let res_start = document.getElementById('produtos_start')
+let res_klimp = document.getElementById('produtos_klimp')
+
 document.addEventListener('DOMContentLoaded', function () {
-    console.log(res)
-    const produtos = [
+    const produtos_autolimpe = [
         {
             nome: "HFX 10000",
             imagem: "./Image/Produtos/AutoLimpe/hfx-10000.png",
             endereco: "./product-page/hfx-10000.html",
         },
-        /*{
-            nome: "HFX 4000",
-            imagem: "./Image/Produtos/AutoLimpe/hfx-4000.png",
-            endereco: "./product-page/",
-        },*/
         {
             nome: "SX Extreme",
             imagem: "./Image/Produtos/AutoLimpe/sx-extreme.png",
@@ -27,44 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
             imagem: "./Image/Produtos/AutoLimpe/toque-de-limpeza.png",
             endereco: "./product-page/toque-de-limpeza.html",
         },
-        {
-            nome: "Top Tires",
-            imagem: "./Image/Produtos/AutoLimpe/top-tires.png",
-            endereco: "./product-page/top-tires.html",
-        },
-        {
-            nome: "Acqua Paris",
-            imagem: "./Image/Produtos/AutoLimpe/acqua-paris-gold.png",
-            endereco: "./product-page/acqua-paris.html",
-        },
-        {
-            nome: "Rose 31",
-            imagem: "./Image/Produtos/AutoLimpe/rose-31.png",
-            endereco: "./product-page/rose-31.html",
-        },
-        {
-            nome: "Silicone em Gel",
-            imagem: "./Image/Produtos/AutoLimpe/silicone-em-gel.png",
-            endereco: "./product-page/silicone-em-gel.html",
-        },
-        {
-            nome: "Base para Cera",
-            imagem: "./Image/Produtos/AutoLimpe/base-para-cera-liquida.png",
-            endereco: "./product-page/base-para-cera-liquida.html",
-        },
-        {
-            nome: "Revit. de Plastico",
-            imagem: "./Image/Produtos/AutoLimpe/revitalizador-de-plastico.png",
-            endereco: "./product-page/revitalizador-de-plastico.html",
-        },
-        {
-            nome: "Hidrat. de Couro",
-            imagem: "./Image/Produtos/AutoLimpe/hidratante-de-couro.png",
-            endereco: "./product-page/hidratante-de-couro.html",
-        },
-
-
-
+    ]
+    const produtos_start = [
         {
             nome: "FX 4000",
             imagem: "./Image/Produtos/Start/fx-4000.png",
@@ -90,9 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
             imagem: "./Image/Produtos/Start/pretita-5l.png",
             endereco: "./product-page/pretita.html",
         },
-
-
-
+    ]
+    const produtos_klimp = [
         {
             nome: "Acero Talco",
             imagem: "./Image/Produtos/Klimp/acero-talco.png",
@@ -120,8 +93,8 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     ]
 
-    produtos.map((val) => {
-        res.innerHTML += `
+    produtos_autolimpe.map((val) => {
+        res_autolimpe.innerHTML += `
         <div class="formprod">
             <img src="`+ val.imagem + `">
             <h1>`+ val.nome + `</h1>
@@ -130,8 +103,38 @@ document.addEventListener('DOMContentLoaded', function () {
         let infoprod = document.getElementsByTagName('img')
         for (let i = 0; i < infoprod.length; i++) {
             infoprod[i].addEventListener("click", function () {
-                if (!produtos[i].endereco || produtos[i].endereco == './product-page/') return window.alert("Pagina não disponivel, tente novamente mais tarde!")
-                location.href = produtos[i].endereco
+                if (!produtos_autolimpe[i].endereco) return window.alert("Pagina não disponivel, tente novamente mais tarde!")
+                location.href = produtos_autolimpe[i].endereco
+            })
+        }
+    })
+    produtos_start.map((val) => {
+        res_start.innerHTML += `
+        <div class="formprod">
+            <img src="`+ val.imagem + `">
+            <h1>`+ val.nome + `</h1>
+        </div>`
+
+        let infoprod = document.getElementsByTagName('img')
+        for (let i = 0; i < infoprod.length; i++) {
+            infoprod[i].addEventListener("click", function () {
+                if (!produtos_start[i].endereco) return window.alert("Pagina não disponivel, tente novamente mais tarde!")
+                location.href = produtos_start[i].endereco
+            })
+        }
+    })
+    produtos_klimp.map((val) => {
+        res_klimp.innerHTML += `
+        <div class="formprod">
+            <img src="`+ val.imagem + `">
+            <h1>`+ val.nome + `</h1>
+        </div>`
+
+        let infoprod = document.getElementsByTagName('img')
+        for (let i = 0; i < infoprod.length; i++) {
+            infoprod[i].addEventListener("click", function () {
+                if (!produtos_klimp[i].endereco) return window.alert("Pagina não disponivel, tente novamente mais tarde!")
+                location.href = produtos_klimp[i].endereco
             })
         }
     })
