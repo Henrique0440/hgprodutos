@@ -208,7 +208,7 @@ footer{
 
     .produtos {
         display: block;
-        width: 75%;
+        width: 100%;
         overflow: hidden;
         margin: 100px auto;
     }
