@@ -2,13 +2,15 @@ import { autolimpe } from "./Produtos_JS/p_autolimpe.js";
 import { klimp } from "./Produtos_JS/p_klimp.js";
 import { start } from "./Produtos_JS/p_start.js";
 
-
 let p_start = document.getElementById('p_start')
 let p_autolimpe = document.getElementById('p_autolimpe')
 let p_klimp = document.getElementById('p_klimp')
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    console.table(start)
+    console.table(autolimpe)
+    console.table(klimp)
 
     start.map((val) => {
         p_start.innerHTML += `
