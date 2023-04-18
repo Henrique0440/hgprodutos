@@ -106,7 +106,7 @@ a {
 .formprod {
     color: rgb(24, 24, 24);
     text-align: center;
-    background-color: rgb(150, 150, 150);
+    background-image: linear-gradient(rgb(122, 122, 122), rgb(145, 145, 145), rgb(180, 180, 180), rgb(199, 199, 199));
     border-radius: 5px;
     width: 200px;
     height: 180px;
@@ -127,6 +127,12 @@ a {
 
 .formprod h1 {
     font-size: 18px;
+}
+
+.formprod hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(122, 122, 122);
 }
 
 .titulo {
@@ -169,7 +175,7 @@ a {
 .product-page {
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(180, 180, 180);
+    background-image: linear-gradient(rgb(122, 122, 122), rgb(145, 145, 145), rgb(180, 180, 180), rgb(199, 199, 199));
     width: 600px;
     margin: 100px auto;
     padding-top: 5px;
@@ -228,7 +234,7 @@ footer {
     }
 
     .formprod h1 {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .infosemp {

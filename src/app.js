@@ -12,13 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
     console.table(autolimpe)
     console.table(klimp)
 
-    start.map((val) => {
+    start.slice(0, 6).map((val) => {
         p_start.innerHTML += `
-        <div class="formprod">
-        <img class="btn_start" src="`+ val.imagem + `">
-        <h1>`+ val.nome + `</h1>
-        </div>`
-
+            <div class="formprod">
+                <img class="btn_start" src="`+ val.imagem + `">
+                <h1>`+ val.nome + `</h1>
+            </div>`
         var infop = document.getElementsByClassName("btn_start")
         for (let i = 0; i < infop.length; i++) {
             infop[i].addEventListener("click", function () {
