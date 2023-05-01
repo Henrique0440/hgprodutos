@@ -92,7 +92,28 @@ a {
     background-attachment: fixed;
 }
 
+.inicio {
+    background-image: linear-gradient(rgb(122, 122, 122), rgb(145, 145, 145), rgb(180, 180, 180), rgb(199, 199, 199));
+}
 
+.inicio h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inicio p {
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+
+.fotos {
+    text-align: center;
+}
+
+.inicio img {
+    margin: 2px;
+    width: 300px;
+}
 
 .produtos {
     color: white;
@@ -273,5 +294,10 @@ footer {
 
     .erro img {
         width: 100%;
+    }
+
+    .inicio img {
+        margin: 2px;
+        width: 100px;
     }
 }
