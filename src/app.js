@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.table(autolimpe)
     console.table(klimp)
 
-    start.slice(0, 6).map((val) => {
+    start.map((val) => {
         p_start.innerHTML += `
             <div class="formprod">
                 <img class="btn_start" src="`+ val.imagem + `">
