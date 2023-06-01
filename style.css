@@ -95,6 +95,9 @@ a {
 .inicio {
     background-image: linear-gradient(rgb(122, 122, 122), rgb(145, 145, 145), rgb(180, 180, 180), rgb(199, 199, 199));
 }
+.inicio a{
+    color: blue;
+}
 
 .inicio h2 {
     margin-bottom: 20px;
@@ -172,7 +175,7 @@ a {
     margin: 10px auto;
 }
 
-.teste {
+.margem-ctt {
     margin-top: 100px;
 }
 
